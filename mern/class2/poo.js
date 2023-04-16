@@ -57,20 +57,7 @@ class CreditAccount extends BankAccount {
 
 }
 
-class SaveAccount extends BankAccount {
 
-    constructor() {
-        super()
-    }
-
-}
-
-class Client {
-
-    constructor(accounts) {
-        this.accounts = accounts;
-    }
-}
 
 const account1 = new BankAccount('11111111-1', 'Juanita Soto', 20000, 'Calle Real 123, Valdivia');
 console.log("🚀 ", account1);
@@ -84,3 +71,16 @@ console.log("🚀 ~ file: poo.js:68 ~ account2:", account2)
 console.log(account2.isActive);
 account2.useCreditCard(20000);
 console.log("🚀 ~ file: poo.js:68 ~ account2:", account2)
+
+const accountFather = new BankAccount('33333333-3', 'Papá buena onda', 1000000, 'Las Condes s/n, Santiago' );
+const accountSon = new BankAccount('44444444-4', 'hijo pobre', 0, 'avenida vive con sus padres');
+//Transferir $ 100.000.- de la cta del padre a la del hijo//
+let transferValue = 100000;
+accountFather.creditWithdraw(transferValue);
+accountSon.creditCharge(transferValue);
+console.log(`Saldo cuenta padre: ${accountFather.getCredit()}`);
+console.log(`Saldo cuenta hijo: ${accountSon.getCredit()}`);
+
+
+
+
