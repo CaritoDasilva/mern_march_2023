@@ -17,11 +17,14 @@ class BankAccount {
         this.saldo = 0;
         this.changeStatusAccount(false);
     }
-
-    // transferCredit(destination, amount) {
-        
-    // }
-
+    transferCredit(destination, amount) {
+            if (amount > this.saldo) {
+                console.log('error')
+            } else {
+                this.saldo -= amount;
+                destination.creditCharge(amount);
+            }
+    }
     getCredit() {
         return this.saldo;
     }
