@@ -1,12 +1,10 @@
 import React from "react";
 
-const UsersList = ({ users }) => {
+const UsersList = () => {
 
     return (
         <div>
-            {users?.map((user, idx) => (
-                <p>{user.userName}</p>
-            ) )}
+            
         </div>
     )
 
