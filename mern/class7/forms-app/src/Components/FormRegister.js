@@ -31,11 +31,16 @@ const FormRegister = () => {
             errores.correo = "El correo solo puede contener letras, numeros, puntos y guion bajo"
           }
           //Validacion contraseña
-        //   if(valores.password){
-        //     errores.correo = "Por favor ingresa una contraseña"
-        //   }else if (valores.password && valores.confirmPassword.test(valores.password)) {
-        //     errores.password="La contraseña es invalida"
-        //   }
+          if(valores.password){
+            errores.password = "Por favor ingresa una contraseña"
+          }else if (valores.password && valores.confirmPassword.test(valores.password)) {
+            errores.password="La contraseña es invalida"
+          }
+          if(valores.confirmPassword){
+            errores.confirmPassword = "Por favor ingresa una contraseña"
+          }else if (valores.confirmPassword && valores.confirmPassword.test(valores.confirmPassword)) {
+            errores.confirmPassword="La contraseña es invalida"
+          }
           return errores;
         }}
         onSubmit={({resetForm}) => {
@@ -93,7 +98,7 @@ const FormRegister = () => {
               type="password"
               name="confirmPassword"
             />
-            <ErrorMessage name="confirmPasword" component={()=>(
+            <ErrorMessage name="confirmPassword" component={()=>(
                 <div className={styles["msg-error"]}>
                 {errors.confirmPassword}
               </div>
