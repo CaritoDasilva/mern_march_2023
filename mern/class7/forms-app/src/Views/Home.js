@@ -3,12 +3,12 @@ import FormRegister from "../Components/FormRegister";
 import UsersList from "../Components/UsersList";
 
 const Home = () => {
-    const [users, setUsers] = useState([]);
+    const[formularioEnviado, setFormularioEnviado] = useState(false);
 
     return (
         <div>
-            <FormRegister users={users} setUsers={setUsers} />
-            <UsersList users={users} setUsers={setUsers} />
+            <FormRegister />
+            <UsersList formularioEnviado={formularioEnviado} setFormularioEnviado={setFormularioEnviado}/>
         </div>
     )
 
