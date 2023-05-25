@@ -57,6 +57,10 @@ nvm install v14
 
 # Copiar y Probar Proyecto en Servidor
 
+-   [ ] Antes de subir proyecto a github ir al archivo .gitignore dentro de client y comentar la línea ```/build```
+-   [ ] Correr en el client ```npm run build```
+-   [ ] Asegúrense que dentro de client no existe un archivo .git, pueden utilizar ```ls -a```
+-   [ ] Crear repositorio y subir el proyecto.
 -   [ ] `git clone tu-url-de-github` (Es posible que tengas que entrar a tu login)
 -   [ ] `cd tu-proyecto`
 -   [ ] export repoName=MERN-Deployment
