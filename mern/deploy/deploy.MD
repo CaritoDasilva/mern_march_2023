@@ -73,7 +73,7 @@ nvm install v14
 -   [ ] sudo rm -rf /var/www/html
 -   [ ] sudo mv build /var/www/html
 -   [ ] sudo service nginx restart
--   [ ] sudo grep -rl localhost /var/www/html | xargs sed -i 's/http:\/\/localhost:8080//g'
+-   [ ] sudo grep -rl localhost /var/www/html | xargs sed -i 's/http://localhost:8080//g'
 -   [ ] Ya deberías poder ver en la url que antes veíamos NGYNX el cliente que creaste en tu proyecto
 
 # Configuración backend
