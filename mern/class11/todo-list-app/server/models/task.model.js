@@ -8,7 +8,7 @@ const TaskSchema = new Schema({
     }, 
     description: {
         type: String,
-        required: [true, 'Debe ingresar un título para la tarea.'],
+        required: [true, 'Debe ingresar una descripción para la tarea.'],
         maxlength: [100, 'Una tarea debe tener al menos 3 caracteres']
     },
     status: {

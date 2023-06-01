@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/task_manager_db', {
+mongoose.connect('mongodb://127.0.0.1/task_manager_db', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => console.log('We are making some connections ninjas!'))
