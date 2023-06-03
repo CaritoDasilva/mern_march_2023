@@ -59,6 +59,7 @@ nvm install v14
 
 -   [ ] Antes de subir proyecto a github ir al archivo .gitignore dentro de client y comentar la línea ```/build```
 -   [ ] Correr en el client ```npm run build```
+-   [ ] En el client eliminar de todo el proyecto las urls http://localhost:8080  y dejarlas que empiecen con '/api/<resto_de_la_ruta>'
 -   [ ] Asegúrense que dentro de client no existe un archivo .git, pueden utilizar ```ls -a```
 -   [ ] Crear repositorio y subir el proyecto.
 -   [ ] `git clone tu-url-de-github` (Es posible que tengas que entrar a tu login)
@@ -73,7 +74,6 @@ nvm install v14
 -   [ ] sudo rm -rf /var/www/html
 -   [ ] sudo mv build /var/www/html
 -   [ ] sudo service nginx restart
--   [ ] sudo grep -rl localhost /var/www/html | xargs sed -i 's/http://localhost:8080//g'
 -   [ ] Ya deberías poder ver en la url que antes veíamos NGYNX el cliente que creaste en tu proyecto
 
 # Configuración backend
