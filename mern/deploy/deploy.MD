@@ -60,7 +60,7 @@ nvm install v14
 -   [ ] Antes de subir proyecto a github ir al archivo .gitignore dentro de client y comentar la línea ```/build```
 -   [ ] Correr en el client ```npm run build```
 -   [ ] En el client eliminar de todo el proyecto las urls http://localhost:8080  y dejarlas que empiecen con '/api/<resto_de_la_ruta>'
-<img width="199" alt="Captura de pantalla 2023-06-02 a la(s) 22 08 11" src="https://github.com/CaritoDasilva/mern_march_2023/assets/39274667/5dac4cdd-1b79-4033-a976-42ea58f8c956">
+<img width="989" alt="Captura de pantalla 2023-06-02 a la(s) 22 17 14" src="https://github.com/CaritoDasilva/mern_march_2023/assets/39274667/2930df5b-f302-41d2-b48b-ecdfb45c2638">
 -   [ ] Asegúrense que dentro de client no existe un archivo .git, pueden utilizar ```ls -a```
 -   [ ] Crear repositorio y subir el proyecto.
 -   [ ] `git clone tu-url-de-github` (Es posible que tengas que entrar a tu login)
